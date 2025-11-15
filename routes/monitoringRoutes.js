@@ -52,7 +52,7 @@ router.get("/stats", (req, res) => {
       embeddingsComputedAt: embeddingsDate
         ? embeddingsDate.toISOString()
         : null,
-      model: "embed-multilingual-v3.0",
+      model: process.env.COHERE_EMBED_MODEL || "embed-multilingual-v3.0",
       inputType: "search_document",
     },
   });

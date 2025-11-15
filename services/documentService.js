@@ -105,7 +105,7 @@ async function embedDocumentsInBatches(documents, batchSize = 96) {
     try {
       const response = await cohere.embed({
         texts: batch.map((doc) => `${doc.data.title}. ${doc.data.snippet}`),
-        model: "embed-multilingual-v3.0",
+        model: process.env.COHERE_EMBED_MODEL || "embed-multilingual-v3.0",
         input_type: "search_document",
       });
 

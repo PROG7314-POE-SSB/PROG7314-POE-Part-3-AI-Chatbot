@@ -128,7 +128,7 @@ router.post("/prompt", async (req, res) => {
       `[API] POST /prompt - Sending ${chatDocuments.length} documents to Cohere.`
     );
     serverResponse = await cohere.chat({
-      model: "command-r-plus",
+      model: process.env.COHERE_CHAT_MODEL || "command-a-03-2025",
       message: prompt,
       documents: chatDocuments,
       preamble: preamble,

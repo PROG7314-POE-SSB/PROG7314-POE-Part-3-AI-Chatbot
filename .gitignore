@@ -26,4 +26,4 @@ dist-ssr
 .env
 
 # Embeddings cache (will be regenerated)
-embeddings/
+# embeddings/

@@ -290,6 +290,9 @@ GET /stats
 
 ### ☁️ Vercel Deployment (Recommended)
 
+![Chatbot deployed on vercel](https://github.com/user-attachments/assets/7280c005-0edf-494b-a85c-9f5127b792b6)
+*CulinaryGPT successfully deployed and running on Vercel with real-time monitoring and analytics*
+
 **CulinaryGPT is optimized for Vercel serverless deployment:**
 
 1. **Prepare for deployment:**
@@ -726,3 +729,9 @@ _"Where artificial intelligence meets culinary excellence!"_ ✨
 Push your code and deploy - the server will automatically initialize embeddings and be ready for both standard and recipe-specific queries.
 
 **📊 Monitor your deployment:** Use `/health` and `/stats` endpoints to track performance and system readiness.
+
+---
+
+> **Developed with ❤️ by SSB Digital for PROG7314 POE Part 3**
+
+---
